@@ -5,9 +5,11 @@ Updated 09/11/2020
 # Introduction
 This project contains terraform code for creating a resource group and app service in Azure. It contains two separate modules - one for the resource group and one for the app service. 
 
-The terraform state files are stored remotely in a storage account in Azure rather than locally. The details of the storage account are declared in the backend resource in environments/test/main.tf
+The terraform state files are stored remotely in a storage account in Azure rather than locally. The details of the storage account are declared in the backend resource in [environments/test/main.tf](environments/test/main.tf).
 
-The variables are set in the environments/test/terraform.tfvars file. This file will pass the variables to the modules.
+The variables are set in the [environments/test/terraform.tfvars](environments/test/terraform.tfvars) file. This file will pass the variables to the modules.
+
+Further environments could be created in future in the environments directory.
 
 # Instructions
 Follow these steps to create the resources.
