@@ -9,7 +9,7 @@ The terraform state files are stored remotely in a storage account in Azure rath
 
 The variables are set in the [environments/test/terraform.tfvars](environments/test/terraform.tfvars) file. This file will pass the variables to the modules.
 
-Further environments could be created in future in the environments directory.
+Further environments could be created in future in the [environments](environments) directory.
 
 # Instructions
 Follow these steps to create the resources.
