@@ -29,5 +29,6 @@ module "app_service" {
   resource_group       = var.resource_group
   location             = var.location
   app_service_name     = var.app_service_name
-  tags                 = var.tags
+  tags                 = local.tags
+  depends_on           = [module.resource_group]
 }

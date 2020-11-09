@@ -1,6 +1,6 @@
 variable "resource_group" {}
 variable "location" {}
-variable "application_type" {}
+variable "app_service_name" {}
 # tags
 variable "environment" {}
 variable "project" {}
