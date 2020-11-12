@@ -26,9 +26,9 @@ module "resource_group" {
 
 module "app_service" {
   source               = "../../modules/app_service"
-  resource_group       = var.resource_group
+  resource_group       = var.resource_group # i should change this to reference the output of the resource_group module, then the depends_on below wouldn't be necessary
   location             = var.location
   app_service_name     = var.app_service_name
   tags                 = local.tags
-  depends_on           = [module.resource_group]
+  depends_on           = [module.resource_group] 
 }
